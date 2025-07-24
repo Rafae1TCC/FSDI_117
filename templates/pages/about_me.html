@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-content">
+            <div class="about-image">
+                <img src="{% static 'img/billgates.jpg' %}" alt="My professional photo" class="profile-img">
+            </div>
+            
+            <div class="about-text">
+                <h1 class="name">My Name</h1>
+                <h2 class="title">My Title as Developer</h2>
+                
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore doloremque dolorem laudantium, dolores eius nulla reprehenderit, aliquid eum expedita corrupti accusantium, molestiae sit quos consequatur fugiat ipsum sint sunt!</p>
+                    <p>Impedit, quaerat hic tenetur, repellendus dignissimos neque amet magni praesentium autem. Qui quis soluta sapiente quibusdam, nesciunt vitae perspiciatis rerum? Nisi accusamus rerum laborum iste ullam illum.</p>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> MongoDB</div>
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-item"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
